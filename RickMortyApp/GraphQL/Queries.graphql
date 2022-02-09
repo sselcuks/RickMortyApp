@@ -1,0 +1,47 @@
+query GetCharacter{
+    characters{
+    results{
+       id
+      name
+      image
+      location {
+        name
+      }
+}
+}
+}
+
+
+query GetRick{
+  characters(filter: { name: "rick"}, page: 1 ) {
+    info {
+      pages
+      count
+    }
+    results {
+      id
+      name
+      image
+      location {
+        name
+      }
+    }
+  }
+}
+
+query GetMorty{
+  characters(filter: { name: "morty"}, page: 1 ) {
+    info {
+      pages
+      count
+    }
+    results {
+      id
+      name
+      image
+      location {
+        name
+      }
+    }
+  }
+}
