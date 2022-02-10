@@ -10,14 +10,16 @@ import UIKit
 import SnapKit
 import Kingfisher
 
+// Create tableview customcell with snapkit
+
 class RickMortyCustomCell: UITableViewCell{
     
     var myCell: Result?{
         didSet{
-            name.text = myCell?.name
-            location.text = myCell?.location?.name
+            name.text = "Name: \(myCell!.name)"
+            location.text = "Location: \(myCell!.location!.name)"
             myImage.setImage(imageUrl: myCell!.image)
-            id.text = myCell?.id
+            id.text = "#Id: \(myCell!.id)"
         }
     }
     
@@ -36,6 +38,7 @@ class RickMortyCustomCell: UITableViewCell{
         fatalError("init(coder:) has not been implemented")
     }
     
+    // cell view properties
     func setUpView(){
         addSubview(myImage)
         addSubview(name)
@@ -43,14 +46,15 @@ class RickMortyCustomCell: UITableViewCell{
         addSubview(id)
         
         myImage.snp.makeConstraints { make in
-            make.height.equalTo(160)
+            make.height.equalTo(150)
+            make.width.equalTo(150)
             make.top.equalTo(contentView)
             make.left.equalToSuperview()
             make.right.equalToSuperview()
         }
         
         id.snp.makeConstraints { make in
-            make.top.equalTo(myImage.snp.bottom).offset(10)
+            make.top.equalTo(myImage.snp.bottom).offset(15)
             make.right.equalTo(contentView)
         }
         

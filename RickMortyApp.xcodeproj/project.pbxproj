@@ -14,7 +14,6 @@
 		EAC2B29627B319C900F5E381 /* RickMortyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2B29527B319C900F5E381 /* RickMortyCustomCell.swift */; };
 		EAC2B29927B31C6100F5E381 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EAC2B29827B31C6100F5E381 /* Kingfisher */; };
 		EAC2B29B27B320ED00F5E381 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2B29A27B320ED00F5E381 /* ImageExtension.swift */; };
-		EAC2B29D27B34F5200F5E381 /* FilterPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2B29C27B34F5100F5E381 /* FilterPopUp.swift */; };
 		EAD4EE2027AE9018007A70BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4EE1F27AE9018007A70BE /* AppDelegate.swift */; };
 		EAD4EE2227AE9018007A70BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4EE2127AE9018007A70BE /* SceneDelegate.swift */; };
 		EAD4EE2427AE9018007A70BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4EE2327AE9018007A70BE /* ViewController.swift */; };
@@ -36,7 +35,6 @@
 		EAC2B29227B2E3D800F5E381 /* RickMortyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyViewModel.swift; sourceTree = "<group>"; };
 		EAC2B29527B319C900F5E381 /* RickMortyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickMortyCustomCell.swift; sourceTree = "<group>"; };
 		EAC2B29A27B320ED00F5E381 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
-		EAC2B29C27B34F5100F5E381 /* FilterPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPopUp.swift; sourceTree = "<group>"; };
 		EAD4EE1C27AE9018007A70BE /* RickMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD4EE1F27AE9018007A70BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD4EE2127AE9018007A70BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,9 +82,7 @@
 		EAC2B26627B079DD00F5E381 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				EAD4EE2827AE901E007A70BE /* Assets.xcassets */,
-				EAD4EE2127AE9018007A70BE /* SceneDelegate.swift */,
-				EAD4EE1F27AE9018007A70BE /* AppDelegate.swift */,
+				EAD4EE4127AF1C16007A70BE /* Constants.swift */,
 				EAC2B26E27B1C8F700F5E381 /* JsonApolloExtension.swift */,
 				EAC2B29A27B320ED00F5E381 /* ImageExtension.swift */,
 			);
@@ -98,7 +94,6 @@
 			children = (
 				EAC2B29427B319B000F5E381 /* TableViewCell */,
 				EAD4EE2327AE9018007A70BE /* ViewController.swift */,
-				EAC2B29C27B34F5100F5E381 /* FilterPopUp.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,6 +133,9 @@
 		EAD4EE1E27AE9018007A70BE /* RickMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				EAD4EE1F27AE9018007A70BE /* AppDelegate.swift */,
+				EAD4EE2127AE9018007A70BE /* SceneDelegate.swift */,
+				EAD4EE2827AE901E007A70BE /* Assets.xcassets */,
 				EAD4EE3E27AF1B8B007A70BE /* GraphQL */,
 				EAC2B29127B2E1C600F5E381 /* ViewModel */,
 				EAC2B29027B2E1BC00F5E381 /* View */,
@@ -148,7 +146,6 @@
 				EAD4EE4327AF388F007A70BE /* schema.json */,
 				EAD4EE2527AE9018007A70BE /* Main.storyboard */,
 				EAD4EE2D27AE901E007A70BE /* Info.plist */,
-				EAD4EE4127AF1C16007A70BE /* Constants.swift */,
 			);
 			path = RickMortyApp;
 			sourceTree = "<group>";
@@ -269,7 +266,6 @@
 				EAC2B29627B319C900F5E381 /* RickMortyCustomCell.swift in Sources */,
 				EAC2B26927B1C02A00F5E381 /* Model.swift in Sources */,
 				EAD4EE2427AE9018007A70BE /* ViewController.swift in Sources */,
-				EAC2B29D27B34F5200F5E381 /* FilterPopUp.swift in Sources */,
 				EAD4EE2027AE9018007A70BE /* AppDelegate.swift in Sources */,
 				EAC2B26F27B1C8F800F5E381 /* JsonApolloExtension.swift in Sources */,
 				EAC2B26D27B1C4D400F5E381 /* Network.swift in Sources */,
